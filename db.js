@@ -1,14 +1,14 @@
 const Pool = require('pg').Pool;
 
-// FOR LOCAL
+// FOR LOCAL ENV
 // const pool = new Pool({
-//     host: 'localhost',
-//     user: 'postgres',
-//     database: 'todo_database',
-//     port: 5432
-// })
+//   host: 'localhost',
+//   user: 'postgres',
+//   database: 'todo_database',
+//   port: 5432,
+// });
 
-// FOR PRODUCTION
+// FOR PRODUCTION ENV
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false },
