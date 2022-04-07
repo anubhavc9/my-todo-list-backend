@@ -19,4 +19,4 @@
 5. `git push heroku master`
 6. If build is successfull, push the code to GitHub remote too
 
-NOTE: Backend prod server runs on -> https://my-todo-list-backend.herokuapp.com/
+## NOTE: Backend prod server runs on -> https://my-todo-list-backend.herokuapp.com/
