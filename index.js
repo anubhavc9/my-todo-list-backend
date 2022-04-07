@@ -33,7 +33,7 @@ app.get('/todos', async (req, res) => {
 
     res.status(200).json(allTodos.rows);
   } catch (err) {
-    console.error(err.message);
+    res.send(err.message);
   }
 });
 
