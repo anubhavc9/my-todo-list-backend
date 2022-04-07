@@ -1,18 +1,7 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const cors = require('cors');
-// const pool = require('./db');
-const { Client } = require('pg');
-const pool = new Client({
-  connectionString:
-    'postgres://bmlytkfspbkjqi:36ff4097a58c363831a19948906d52f91fc9ff2e8bd1131f8b1fa9abf150db83@ec2-3-217-251-77.compute-1.amazonaws.com:5432/d7maldq3eev143',
-  ssl: {
-    rejectUnauthorized: false,
-  },
-});
-
-client.connect();
-
+const pool = require('./db');
 const path = require('path');
 const app = express();
 
