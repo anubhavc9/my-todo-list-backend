@@ -2,13 +2,16 @@
   "name": "my-todo-list-backend",
   "version": "1.0.0",
   "description": "Node.js/Express.js backend of my to-do list Angular app ",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "Anubhav Kandiyal",
   "license": "ISC",
+  "engines": {
+    "node": "14.15.5"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
